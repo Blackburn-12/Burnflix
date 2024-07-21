@@ -17,7 +17,6 @@ const Detailpage = () => {
   const fetchDetailPage = async () => {
     try {
       const response = await axios.get(`${detailPgApi}`);
-      console.log(response.data);
       setData(response.data);
     } catch (error) {
       console.log("error", error);
