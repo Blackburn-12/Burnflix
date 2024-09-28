@@ -28,7 +28,7 @@ const Detailpage = () => {
       <div className="max-w-screen-xl mx-auto ">
       <div className="w-full h-screen">
         <iframe
-          src={`https://multiembed.mov/?video_id=${id}&tmdb=1`}
+          src={`https://vidsrc.xyz/embed/movie/${id}`}
           title="Embedded Video"
           className="w-full h-[90%] rounded-lg shadow-md"
           allowFullScreen
