@@ -73,7 +73,10 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-dark">
       {/* Restored original navbar */}
-      <Navbar setSearchQuery={setSearchQuery} setCurrentPage={setCurrentPage} />
+      <div className="sticky z-50">
+      <Navbar  setSearchQuery={setSearchQuery} setCurrentPage={setCurrentPage} />
+
+      </div>
 
       <main className="container mx-auto px-4 py-6">
         {isLoading ? (

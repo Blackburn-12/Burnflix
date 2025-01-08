@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card, Navbar, Pagination, SkeletonCard } from "./index.js";
 
-
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const fetchTopMovies = async (page) => {
@@ -58,7 +57,9 @@ const PopularMovies = () => {
               <SkeletonCard />
             </div>
           ) : (
-            filteredData.map((data, index) => <Card cardData={data} key={index} />)
+            filteredData.map((data, index) => (
+              <Card cardData={data} key={index} />
+            ))
           )}
         </div>
         <Pagination
