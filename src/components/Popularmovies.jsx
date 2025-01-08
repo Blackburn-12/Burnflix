@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card, Navbar, Pagination, SkeletonCard } from "./index.js";
 
-// Replace this with your actual API key
+
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const fetchTopMovies = async (page) => {
@@ -69,6 +69,9 @@ const PopularMovies = () => {
           totalPages={totalPages}
         />
       </div>
+      <footer className="mt-auto py-4 text-center text-gray-400">
+        <p>© 2025 Burnflix</p>
+      </footer>
     </>
   );
 };

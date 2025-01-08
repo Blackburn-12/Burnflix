@@ -6,7 +6,7 @@ import SkeletonCard from "./SkeletonCard";
 import Detailpage from "./Detailpage";
 import Pagination from "./Pagination";
 import Aboutme from "./Aboutme";
-
+import TvShows from "./TvShows";
 
 export {
   Home,
@@ -17,5 +17,6 @@ export {
   Detailpage,
   Pagination,
   Aboutme,
+  TvShows,
 
 };

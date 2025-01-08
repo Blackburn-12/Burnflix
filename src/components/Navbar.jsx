@@ -119,6 +119,12 @@ const Navbar = ({ setSearchQuery, setCurrentPage }) => {
                     </Link>
                     <Link
                       className="font-Kanit font-normal block py-2 px-3  rounded md:p-0 text-white hover:text-Primary"
+                      to="/tvShows"
+                    >
+                      TV Shows
+                    </Link>
+                    <Link
+                      className="font-Kanit font-normal block py-2 px-3  rounded md:p-0 text-white hover:text-Primary"
                       to="/aboutme"
                     >
                       About me
