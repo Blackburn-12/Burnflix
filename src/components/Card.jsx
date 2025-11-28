@@ -16,6 +16,7 @@ const Card = ({ cardData }) => {
         src={`https://image.tmdb.org/t/p/w1280${cardData.poster_path}`}
         alt={cardData.title}
         className="imdb-card-image "
+        loading="lazy"
       />
       <div className="imdb-card-content">
         <h2 className="imdb-card-title font-Kanit">{cardData.title}</h2>
